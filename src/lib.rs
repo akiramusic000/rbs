@@ -1,6 +1,8 @@
 use crate::parser::Parser;
 
+#[rustfmt::skip]
 mod keywords;
+
 mod lexer;
 mod parser;
 
