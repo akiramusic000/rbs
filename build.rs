@@ -44,7 +44,9 @@ fn main() -> io::Result<()> {
         y.sort_by_key(|x| x.len());
         y.reverse();
     });
-    let mut str = String::from("#![allow(all)]\n\nuse std::sync::LazyLock;\n\nuse ptrie::Trie;\n\n#[derive(Debug, Clone, Copy)]\npub enum IntToken {");
+    let mut str = String::from(
+        "#![allow(all)]\n\nuse std::sync::LazyLock;\n\nuse ptrie::Trie;\n\n#[derive(Debug, Clone, Copy)]\npub enum IntToken {",
+    );
 
     for (k, _) in &s {
         str += "\n\t";
