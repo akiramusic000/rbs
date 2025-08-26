@@ -215,19 +215,19 @@ impl<'src> Parser<'src> {
                 IntToken::Cm => {
                     self.lexer.next();
                     Some(NumberSuffix::Cm)
-                },
+                }
                 IntToken::Rad => {
                     self.lexer.next();
                     Some(NumberSuffix::Rad)
-                },
+                }
                 IntToken::Deg => {
                     self.lexer.next();
                     Some(NumberSuffix::Deg)
-                },
+                }
                 IntToken::In => {
                     self.lexer.next();
                     Some(NumberSuffix::In)
-                },
+                }
                 _ => None,
             },
             Token::Errors(_) => {
